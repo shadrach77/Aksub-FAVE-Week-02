@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#heading-eyebrow {
+  border: 1px solid #414141;
+  border-radius: 37px;
+  padding: 8px;
+  width: 332px;
+  color: #d7d7d7;
+  font-size: 16px;
+}
+
+#heading-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#heading-main h1 {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#heading-main h1 img {
+  width: 68px;
+  height: 61px;
+}
+
+#heading-main p {
+  font-size: 16px;
+  color: #9d9d9d;
+}

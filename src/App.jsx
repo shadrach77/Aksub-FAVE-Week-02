@@ -1,18 +1,25 @@
 import "./App.css";
-import logo from "./assets/react.svg";
+import Card from "./components/Card";
+import Heading from "./components/Heading";
+import { data } from "./data/questionData";
 
 export default function App() {
   return (
     <div id="centering-div">
-      <header>
-        <p id="heading-eyebrow">From Beginner to Advanced Questions</p>
-        <div id="heading-main">
-          <h1>
-            <img src={logo} alt="react-logo" srcset="" /> The React Flash Cards.
-          </h1>
-          <p>Test your react knowledge by answering the flashcards below</p>
-        </div>
-      </header>
+      <Heading />
+      <main>
+        {data.map((data, i) => {
+          return (
+            <Card
+              question={data.question}
+              questionNumber={i + 1}
+              answer={data.answer}
+              difficulty={data.difficulty}
+              key={i}
+            />
+          );
+        })}
+      </main>
     </div>
   );
 }

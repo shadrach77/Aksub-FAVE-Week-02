@@ -1,0 +1,36 @@
+.difficulty-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.difficulty-bubble-size-sm {
+  height: 22px;
+  width: 80px;
+  font-size: 12px;
+}
+
+.difficulty-bubble-size-md {
+  height: 27px;
+  width: 86px;
+  font-size: 16px;
+}
+
+.difficulty-bubble-easy {
+  color: #97e3ff;
+  background-color: #223851;
+  border: 1px solid #97e3ff;
+}
+
+.difficulty-bubble-medium {
+  color: #ffce97;
+  background-color: #4a422f;
+  border: 1px solid #ffce97;
+}
+
+.difficulty-bubble-hard {
+  color: #ff9797;
+  background-color: #522727;
+  border: 1px solid #ff9797;
+}
